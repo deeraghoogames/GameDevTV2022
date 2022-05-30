@@ -31,7 +31,6 @@ public class ButtonManager : MonoBehaviour
         playerController.walkSpeed = 5;
         MenuUpGradeScript.Instance.doubleJumpUnLocked = 0;
 
-        // playerController.canDoubleJump = false;
         GameManager.Instance.vanquishedAmt = 0;
 
         locked.SetActive(true);

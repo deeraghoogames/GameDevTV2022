@@ -63,7 +63,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         // ************************************
-        // anim = GetComponent<Animator>();
         canPatrol = true; // make the enemy move at start of game
         enemyHealth = maxEnemyHealth;
         enemyHeathBar.SetMaxFloatValue (enemyHealth);
@@ -79,11 +78,6 @@ public class Enemy : MonoBehaviour
         enemyHeathBar.SetFloatValue (enemyHealth);
         KillEnemy();
 
-        // StopShooting();
-        // if (GameManager.Instance.isGameOver)
-        // {
-        //     SoundManager.Instance.StopHitSound();
-        // }
         //***************** player attack
         playerPos = player.transform;
         disToPlayer = Vector2.Distance(transform.position, playerPos.position);
@@ -139,18 +133,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // void OnTriggerEnter2D(Collider2D other)
-    // {
-    //     if (other.gameObject.CompareTag("PlayerTrigger"))
-    //     {
-    //         GameManager.Instance.HurtPlayer();
-    //         SoundManager.Instance.PlayHitSound();
-    //     }
-    //     if (other.gameObject.tag == ("PlayerProjectile"))
-    //     {
-    //         enemyHealth--;
-    //     }
-    // }
     void KillEnemy()
     {
         if (enemyHealth <= 0)
@@ -171,9 +153,6 @@ public class Enemy : MonoBehaviour
         {
             GameManager.Instance.VanquishedCounter();
         }
-
-        //SoundManager.Instance.PlayEnemyHitSound();
-        // Instantiate(hitEffect, transform.position, transform.rotation);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -207,16 +186,4 @@ public class Enemy : MonoBehaviour
         speed *= -1;
         canPatrol = true;
     }
-
-    // public void StopShooting()
-    // {
-    //     if (GameManager.Instance.isGameOver == true)
-    //     {
-    //         canShoot = false;
-    //     }
-    //     else
-    //     {
-    //         canShoot = true;
-    //     }
-    // }
 }

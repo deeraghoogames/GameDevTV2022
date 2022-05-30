@@ -2090,7 +2090,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "For centuries I have hidden \r\nIn the shadows \r\n\nReady to rid the
     world \r\nOf the scourge of Evil \r\n\nNow it is \r\n         Do \n       Or
-    \n     Die  \r\nAnd \nI have PERFECTED\r \nThe art of\r\n        DEATH . . .\n"
+    \n     Die  \r\nAnd \nI have PERFECTED\r \nThe art of\r\n        DEATH \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 300efa1acb1a95843b4ff66f162c147b, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: dd354378e4285fe4691465a7563b03d2, type: 2}
@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.8
+  m_fontSize: 71.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

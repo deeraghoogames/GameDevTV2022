@@ -188,6 +188,7 @@ public class GameManager : MonoBehaviour
                 PlayerAttack.Instance.canAttack = false;
                 bossHealthBar.SetActive(false);
                 DestroyAll();
+                SoundManager.Instance.StopPlayerHitSound();
 
                 if (vanquishedAmt >= startBossBattleAmt)
                 {
@@ -205,6 +206,7 @@ public class GameManager : MonoBehaviour
             bossHealthBar.SetActive(false);
             boss.SetActive(false);
             DestroyAll();
+            SoundManager.Instance.StopPlayerHitSound();
         }
     }
 
@@ -232,6 +234,7 @@ public class GameManager : MonoBehaviour
     public void HurtPlayer()
     {
         deathTimer--;
+        SoundManager.Instance.PlayerHitSound();
         if (deathTimer <= 0)
         {
             deathTimer = 0;

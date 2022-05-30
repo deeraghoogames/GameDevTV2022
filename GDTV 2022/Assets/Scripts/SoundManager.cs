@@ -12,6 +12,7 @@ public class SoundManager : MonoBehaviour
             attackSound,
             catSound,
             birdHit,
+            playerHit,
             enemyHurt,
             spawnBird,
             jumpSound;
@@ -66,6 +67,16 @@ public class SoundManager : MonoBehaviour
     public void EnemyHurt()
     {
         enemyHurt.Play();
+    }
+
+    public void PlayerHitSound()
+    {
+        playerHit.Play();
+    }
+
+    public void StopPlayerHitSound()
+    {
+        playerHit.Stop();
     }
 
     public void PlayTimePickUp()
