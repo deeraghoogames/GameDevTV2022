@@ -206,7 +206,7 @@ public class MenuUpGradeScript : MonoBehaviour
             GameManager.Instance.maxDeathTimer += timerXPlier;
             PlayerPrefs
                 .SetFloat("maxDeathTimer", GameManager.Instance.maxDeathTimer);
-            GameManager.Instance.vanquishedAmt -= UpgradeCost;
+            GameManager.Instance.vanquishedAmt -= timeUpgradeCost;
             PlayerPrefs
                 .SetInt("EnemyCount", GameManager.Instance.vanquishedAmt);
 
