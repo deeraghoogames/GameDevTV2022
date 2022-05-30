@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Ground
+  - PlayerTrigger
+  - Crow
   layers:
   - Default
   - TransparentFX
@@ -11,13 +15,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 'Background '
+  - 'Player '
+  - Foreground
+  - Ground
+  - Enemy
+  - ProjectileEnemy
+  - WhatIsBoss
   - 
   - 
   - 
@@ -40,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1187815275
+    locked: 0
+  - name: Player
+    uniqueID: 2105978005
+    locked: 0
+  - name: Foreground
+    uniqueID: 1636752481
     locked: 0
